@@ -5,6 +5,9 @@
 </head>
 <body ng-controller="MainController">
   <div ng-repeat="user in users">
+    <button ng-click ="prev()">Previous</button>
+    {{currentPage}}
+    <button ng-click = "next()">Next</button>
     <h1>{{user.first_name}} {{user.last_name}}</h1>
     <img src="{{user.avatar}}">
     <hr>
